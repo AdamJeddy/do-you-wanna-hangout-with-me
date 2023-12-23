@@ -22,8 +22,13 @@
                     }
                     
                     function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                        // var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                        // var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                        var xRange = window.innerWidth * 0.8;
+                        var yRange = window.innerHeight * 0.8;
+
+                        var x = Math.random() * xRange;
+                        var y = Math.random() * yRange;
                         document.getElementById('noButton').style.left = `${x}px`;
                         document.getElementById('noButton').style.top = `${y}px`;
                     }
