@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #F8C8DC;
+    background-color: #adeefa;
 }
 
 /* Position the "No" button absolutely within body */
@@ -21,13 +21,33 @@ body {
 }
 
 .header_text {
-    font-family: 'Nunito';
-    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 75px;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #333; /* Border for the typing cursor */
+    animation: typing 1s steps(50) forwards, blinkCursor 0.5s infinite step-end;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .text {
@@ -45,8 +65,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
     /* optional: adds some space between the buttons */
 }
 
@@ -72,4 +92,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
