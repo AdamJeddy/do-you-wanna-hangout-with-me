@@ -2,7 +2,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh; /* Ensure the body covers the entire viewport height */
+    overflow: hidden; /* Hide the overflow content */
+    margin: 0; /* Remove default margin */
     background-color: #7FACD6;
 }
 
@@ -17,9 +19,13 @@ body {
     margin-right: 150px;
 }
 
+.container {
+    text-align: center; /* Center align the text in the container */
+}
+
 .header_text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     color: rgb(0, 0, 0);
     text-align: center;
